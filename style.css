@@ -16,8 +16,8 @@ header{
 
 footer{
 	background-color: #69F0AE;
-	width:25%;
-	padding: 20px;
+	width:30%;
+	padding: 30px;
 	margin-top: -13px;
 }
 
@@ -41,9 +41,19 @@ h3{
 }	
 
 p{
-	font-size: 0.7em;
+	font-size: 0.8em;
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+
+a{
+	font-size: 1em;
+	text-decoration: none;
+	color: #b71c1c;
+}
+
+a:hover{
+	color: #FF3D00;
 }
 
 .ligne{
@@ -57,8 +67,8 @@ p{
 }	
 
 .identification{
-	width: 75%;
-	padding-left: 40px;
+	width: 70%;
+	padding-left: 60px;
 	font-weight: 400;
 }
 
@@ -75,8 +85,8 @@ p{
 .portraitfond{
 	display:flex;
 	background-color:#69F0AE;
-	width:25%;
-	padding: 20px;
+	width:30%;
+	padding: 30px;
 }	
 
 .portrait{
@@ -88,16 +98,16 @@ p{
 
 
 .cold{
-	padding: 20px;
-	width: 75%;
-
+	padding: 30px;
+	width: 70%;
 }
 
-.perso{
+.t_perso{
 	background-color:#004D40;
-	margin-left: -20px;
-	margin-right: -20px;
-	margin-top: 40px;
+	margin-left: -30px;
+	margin-right: -30px;
+	margin-top: 60px;
+	margin-bottom: 30px;
 	text-align: center;
 	color: #69F0AE;
 	padding-top: 3px;
@@ -110,7 +120,7 @@ p{
 }
 
 .t_loisirs{
-	margin-top:200px;
+	margin-top:300px;
 }
 
 .iloisirs{
@@ -125,8 +135,7 @@ p{
 	justify-content: space-around;
 }
 
-.t_cv{
-	margin-top: 40px;
+.t_cv, .t_cv1{
 	display:flex;
 	align-items: center;
 	padding-left: 5px;
@@ -135,10 +144,14 @@ p{
 	
 }
 
+.t_cv{
+	margin-top: 60px;
+}
+
 .cv{
 	display:flex;
+	align-items: flex-start;
 	margin-bottom: 20px;
-
 }
 
 .cv-d{
@@ -152,12 +165,12 @@ p{
 
 .dot1{
 	width: 15px;
-	margin-top: -25px;
+	padding-top: 5px;
 }
 
 .dot2{
 	width: 10px;
-	margin-top: -35px;
+	padding-top: 5px;
 }
 
 .date{
