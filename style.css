@@ -1,3 +1,4 @@
+/****** Balises génériques *****/
 html{
 	background-color: #eeeeee;
 }
@@ -21,6 +22,27 @@ footer{
 	margin-top: -13px;
 }
 
+
+p{
+	font-size: 0.8em;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+a{
+	font-size: 1em;
+	text-decoration: none;
+	color: #b71c1c;
+}
+
+a:hover{
+	color: #FF3D00;
+}
+/****** Fin des Balises génériques *****/
+
+
+
+/****** titres ******/
 h1, h2, h3{
 	text-transform: uppercase;
 }	
@@ -38,68 +60,6 @@ h3{
 	font-size: 0.8em;
 	font-weight: 600;
 	margin: 0;
-}	
-
-p{
-	font-size: 0.8em;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-a{
-	font-size: 1em;
-	text-decoration: none;
-	color: #b71c1c;
-}
-
-a:hover{
-	color: #FF3D00;
-}
-
-.ligne{
-	border-top: 2px #69F0AE solid;
-	width: 15%;
-}
-
-.corps{
-	display: flex;
-
-}	
-
-.identification{
-	width: 70%;
-	padding-left: 60px;
-	font-weight: 400;
-}
-
-.metier{
-	font-size: 1em;
-	margin-top: 0;
-	margin-bottom: O;
-}
-
-.prenom{
-	color: #69F0AE;
-}
-
-.portraitfond{
-	display:flex;
-	background-color:#69F0AE;
-	width:30%;
-	padding: 30px;
-}	
-
-.portrait{
-	display:flex;
-	margin: auto;
-	border-radius: 50%;
-	box-shadow: 0 0 10px grey;
-}
-
-
-.cold{
-	padding: 30px;
-	width: 70%;
 }
 
 .t_perso{
@@ -115,14 +75,75 @@ a:hover{
 	font-weight: 500;
 }
 
-.icones{
-	width:40px;
-}
-
 .t_loisirs{
-	margin-top:300px;
+	margin-top:150px;
 }
 
+.t_cv, .t_cv1{
+	display:flex;
+	align-items: center;
+	padding-left: 5px;
+	border-bottom: 2px  #69F0AE solid;
+	font-weight: 600;	
+}
+
+.t_cv{
+	margin-top: 60px;
+}
+/****** fin des titres ******/
+
+
+/***** conteneurs *****/
+.corps{
+	display: flex;
+}
+
+.cold{
+	padding: 30px;
+	width: 70%;
+}
+/***** fin des conteneurs *****/
+
+
+/***** En-tête *****/
+.portraitfond{
+	display:flex;
+	background-color:#69F0AE;
+	width:30%;
+	padding: 30px;
+}	
+
+.portrait{
+	display:flex;
+	margin: auto;
+	border-radius: 50%;
+	box-shadow: 0 0 10px grey;
+}
+
+.identification{
+	width: 70%;
+	padding-left: 60px;
+	font-weight: 400;
+}
+
+.prenom{
+	color: #69F0AE;
+}
+
+.metier{
+	font-size: 1em;
+	margin-top: 0;
+	margin-bottom: O;
+}
+
+.ligne{
+	border-top: 2px #69F0AE solid;
+	width: 15%;
+}
+/***** Fin En-tête *****/
+
+
+/***** Infos perso *****/
 .iloisirs{
 	border: solid 1px black;
 	border-radius: 50%;
@@ -134,20 +155,12 @@ a:hover{
 	display: flex;
 	justify-content: space-around;
 }
+/***** Fin Infos perso *****/
 
-.t_cv, .t_cv1{
-	display:flex;
-	align-items: center;
-	padding-left: 5px;
-	border-bottom: 2px  #69F0AE solid;
-	font-weight: 600;
-	
-}
 
-.t_cv{
-	margin-top: 60px;
-}
 
+
+/****** Contenu CV *****/
 .cv{
 	display:flex;
 	align-items: flex-start;
@@ -158,9 +171,8 @@ a:hover{
 	width: 60%;
 }
 
-.recommandation{
-	justify-content: space-between;
-	padding-right: 30%;
+.icones{
+	width:40px;
 }
 
 .dot1{
@@ -177,3 +189,64 @@ a:hover{
 	width:40%;
 	padding: 0 10px 10px 10px;
 }
+
+.recommandation{
+	padding-right: 30px;
+	padding-left: 20px;
+}
+/****** Fin Contenu CV *****/
+
+
+/****** Responsive Design ******/
+@media screen and (max-width:900px){
+	
+	body{
+		margin:0;
+		width: 100%;
+	}
+	
+	p{
+		margin-bottom: 5px;
+		margin-top: 0px;
+	}
+	footer{
+		display:flex;
+		order: 2;
+		width: 90%;
+		flex-direction: column;
+		margin-left: 5px;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	
+
+	.cold{
+	width: 90%;
+	}
+	
+	.corps{
+	width: 100%;
+	flex-direction: column;
+	}
+	
+	.t_loisirs, .t_perso{
+	margin-top:30px;
+	}
+	
+	.contact {
+	display: flex;
+	justify-content: space-around;
+	}
+	
+
+
+}
+
+
+
+
+
+
+
+
+
