@@ -76,7 +76,7 @@ h3{
 }
 
 .t_loisirs{
-	margin-top:150px;
+	margin-top:120px;
 }
 
 .t_cv, .t_cv1{
@@ -199,10 +199,11 @@ h3{
 
 /****** Responsive Design ******/
 @media screen and (max-width:900px){
+
 	
-	body{
-		margin:0;
-		width: 100%;
+	
+	body{	
+		margin: 0;
 	}
 	
 	p{
@@ -212,20 +213,21 @@ h3{
 	footer{
 		display:flex;
 		order: 2;
-		width: 90%;
+		width: auto;
 		flex-direction: column;
-		margin-left: 5px;
+		margin-left: 0px;
 		margin-top: 0px;
 		padding-top: 0px;
 	}
 	
-
-	.cold{
-	width: 90%;
+	
+	header,.cold{
+		width: auto;
+		justify-content: flex-center;
 	}
 	
 	.corps{
-	width: 100%;
+	width: auto;
 	flex-direction: column;
 	}
 	
@@ -238,11 +240,74 @@ h3{
 	justify-content: space-around;
 	}
 	
-
-
 }
 
 
+@media screen and (max-width:500px){
+	
+	header{
+		flex-direction: column;
+	}
+	
+	p, h1, h3{
+		text-align: center;
+		width: 100%;
+		padding: 0;
+	}
+	
+	footer{
+		padding: 20px;
+	}
+	
+	.portraitfond{
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 20px 0 20px 0;
+		
+	}
+	
+	.cold{
+		padding: 20px;
+	}
+	
+	.t_perso{
+		width: 100%;
+		margin-top: 10px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.t_cv1, .t_cv{
+		padding: 0;
+		justify-content: center;
+		width: 100%;
+	}
+	
+	.cv{
+		flex-direction: column;
+		justify-content: flex-center;	
+	}
+	
+	.identification{
+		padding: 0;
+	}
+		
+	.recommandation{
+		margin-top: 20px;
+	}
+
+	.date, .recommandation, .cv-d{
+		width: 100%;
+		padding: 0;
+	}
+	
+	.dot1, .dot2{
+		margin-left: 49%;
+		padding-bottom: 5px;
+	}
+	
+	
+}
 
 
 
