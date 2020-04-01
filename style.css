@@ -40,8 +40,6 @@ a:hover{
 }
 
 hr{
-	/*border-top: 2px #69F0AE solid;*/
-	
 	background-color: #69F0AE;
 	border: none;
 	width: 15%;
@@ -92,17 +90,16 @@ h3{
 	margin-top:120px;
 }
 
-.t_cv, .t_cv1{
-	display:flex;
+
+.titre_cv{
+	display: flex;
 	align-items: center;
-	padding-left: 5px;
-	border-bottom: 2px  #69F0AE solid;
-	font-weight: 600;	
+	border-bottom: solid 2px #69F0AE;
+	margin-bottom: 15px;
+	margin-top: 50px;
 }
 
-.t_cv{
-	margin-top: 60px;
-}
+
 /****** fin des titres ******/
 
 
@@ -183,6 +180,7 @@ h3{
 
 .icones{
 	width:40px;
+	margin-right: 10px;
 }
 
 .dot1{
@@ -264,6 +262,7 @@ h3{
 		width: 100%;
 		padding: 0;
 	}
+
 	
 	footer{
 		padding: 20px;
@@ -275,6 +274,7 @@ h3{
 		margin-top: 5px;
 		width: 60%;
 	}
+	
 		
 	.portraitfond{
 		width: 100%;
@@ -292,12 +292,6 @@ h3{
 		margin-top: 10px;
 		margin-left: 0;
 		margin-right: 0;
-	}
-	
-	.t_cv1, .t_cv{
-		padding: 0;
-		justify-content: center;
-		width: 100%;
 	}
 	
 	.cv{
@@ -319,7 +313,8 @@ h3{
 	}
 	
 	.dot1, .dot2{
-		margin-left: 49%;
+		display: block;
+		margin: auto;
 		padding-bottom: 5px;
 	}
 	
