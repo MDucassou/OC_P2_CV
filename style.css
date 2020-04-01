@@ -38,6 +38,17 @@ a{
 a:hover{
 	color: #FF3D00;
 }
+
+hr{
+	/*border-top: 2px #69F0AE solid;*/
+	
+	background-color: #69F0AE;
+	border: none;
+	width: 15%;
+	text-align: left;
+	margin: 0;
+	height: 2px;
+}
 /****** Fin des Balises génériques *****/
 
 
@@ -61,6 +72,8 @@ h3{
 	font-weight: 600;
 	margin: 0;
 }
+
+
 
 .t_perso{
 	background-color:#004D40;
@@ -133,13 +146,10 @@ h3{
 .metier{
 	font-size: 1em;
 	margin-top: 0;
-	margin-bottom: O;
+	margin-bottom: 0;
 }
 
-.ligne{
-	border-top: 2px #69F0AE solid;
-	width: 15%;
-}
+
 /***** Fin En-tête *****/
 
 
@@ -223,7 +233,7 @@ h3{
 	
 	header,.cold{
 		width: auto;
-		justify-content: flex-center;
+		justify-content: center;
 	}
 	
 	.corps{
@@ -259,6 +269,13 @@ h3{
 		padding: 20px;
 	}
 	
+	hr{
+		text-align:center;
+		margin: auto;
+		margin-top: 5px;
+		width: 60%;
+	}
+		
 	.portraitfond{
 		width: 100%;
 		margin-bottom: 20px;
@@ -285,7 +302,7 @@ h3{
 	
 	.cv{
 		flex-direction: column;
-		justify-content: flex-center;	
+		justify-content: center;	
 	}
 	
 	.identification{
