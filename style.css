@@ -15,11 +15,13 @@ header{
 	align-items: center;
 }
 
-footer{
+aside{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 	background-color: #69F0AE;
 	width:30%;
 	padding: 30px;
-	margin-top: -13px;
 }
 
 
@@ -42,7 +44,7 @@ a:hover{
 hr{
 	background-color: #69F0AE;
 	border: none;
-	width: 15%;
+	width: 50px;
 	text-align: left;
 	margin: 0;
 	height: 2px;
@@ -63,6 +65,7 @@ h1{
 
 h2{
 	font-size: 1em;
+	margin-bottom: 10px;
 }
 
 h3{
@@ -93,17 +96,18 @@ h3{
 
 .titre_cv{
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
+    padding-bottom: 3px;
 	border-bottom: solid 2px #69F0AE;
 	margin-bottom: 15px;
 	margin-top: 50px;
 }
-
-
 /****** fin des titres ******/
 
 
+
 /***** conteneurs *****/
+
 .corps{
 	display: flex;
 }
@@ -116,41 +120,41 @@ h3{
 
 
 /***** En-tête *****/
-.portraitfond{
+#portraitfond{
 	display:flex;
 	background-color:#69F0AE;
 	width:30%;
 	padding: 30px;
 }	
 
-.portrait{
+#portrait{
 	display:flex;
 	margin: auto;
 	border-radius: 50%;
 	box-shadow: 0 0 10px grey;
 }
 
-.identification{
+#identification{
 	width: 70%;
-	padding-left: 60px;
+	padding: 30px;
 	font-weight: 400;
 }
 
-.prenom{
+#prenom{
 	color: #69F0AE;
 }
 
-.metier{
+#metier{
 	font-size: 1em;
 	margin-top: 0;
 	margin-bottom: 0;
 }
-
-
 /***** Fin En-tête *****/
 
 
+
 /***** Infos perso *****/
+
 .iloisirs{
 	border: solid 1px black;
 	border-radius: 50%;
@@ -158,7 +162,7 @@ h3{
 	padding-top: 5px;
 }
 
-.loisirs{
+#loisirs{
 	display: flex;
 	justify-content: space-around;
 }
@@ -180,7 +184,7 @@ h3{
 
 .icones{
 	width:40px;
-	margin-right: 10px;
+	margin-right: 20px;
 }
 
 .dot1{
@@ -218,7 +222,14 @@ h3{
 		margin-bottom: 5px;
 		margin-top: 0px;
 	}
-	footer{
+		
+	
+	header,.cold{
+		width: auto;
+		justify-content: center;
+	}
+	
+	aside{
 		display:flex;
 		order: 2;
 		width: auto;
@@ -228,24 +239,18 @@ h3{
 		padding-top: 0px;
 	}
 	
-	
-	header,.cold{
-		width: auto;
-		justify-content: center;
-	}
-	
 	.corps{
-	width: auto;
-	flex-direction: column;
+		width: auto;
+		flex-direction: column;
 	}
 	
 	.t_loisirs, .t_perso{
-	margin-top:30px;
+		margin-top:30px;
 	}
 	
-	.contact {
-	display: flex;
-	justify-content: space-around;
+	#contact {
+		display: flex;
+		justify-content: space-around;
 	}
 	
 }
@@ -263,11 +268,7 @@ h3{
 		padding: 0;
 	}
 
-	
-	footer{
-		padding: 20px;
-	}
-	
+		
 	hr{
 		text-align:center;
 		margin: auto;
@@ -275,8 +276,12 @@ h3{
 		width: 60%;
 	}
 	
-		
-	.portraitfond{
+	
+	aside{
+		padding: 20px;
+	}
+	
+	#portraitfond{
 		width: 100%;
 		margin-bottom: 20px;
 		padding: 20px 0 20px 0;
@@ -299,7 +304,7 @@ h3{
 		justify-content: center;	
 	}
 	
-	.identification{
+	#identification{
 		padding: 0;
 	}
 		
@@ -317,8 +322,6 @@ h3{
 		margin: auto;
 		padding-bottom: 5px;
 	}
-	
-	
 }
 
 
